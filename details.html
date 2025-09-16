@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details</title>
+
+    <!-- &-----Fav Icon ---- -->
+    <link rel="shortcut icon" href="./images/5930147.png" type="image/x-icon">
+    <!-- & AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- &-----Font Awesome css---- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- &----Bootstrap css ---- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- &-----Main css ---- -->
+    <link rel="stylesheet" href="./css/stylee.css">
+    <script type="module">
+        import { Ui } from "./js/ui.module.js";
+        import { Details } from "./js/details.module.js";
+
+        document.addEventListener("DOMContentLoaded", async () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const gameId = urlParams.get("id");
+
+            const ui = new Ui();
+            const details = new Details();
+            const data = await details.getDetails(gameId);
+            ui.displayDetails(data);
+            
+            // Refresh AOS after content is loaded to ensure animations work
+            setTimeout(() => {
+                AOS.refresh();
+            }, 100);
+        });
+
+    </script>
+
+</head>
+
+<body>
+    <main class="detailsmain mb-5">
+        <section class="details">
+            <div class="container">
+                <header class="hstack" data-aos="fade-down" data-aos-duration="800">
+                    <h1 class="text-center h3 mt-4 h1Details"></h1>
+                </header>
+                <div class="row g-4 mt-4 px-3" id="detailsContent"></div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="fixed-bottom" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="container py-3 text-center">
+            <p class=" m-0 fs-6 ">
+                Made with <i class="fa-solid fa-heart fa-beat mx-1 text-danger"></i> by
+                <a href="https://www.linkedin.com/in/asmaa-abdo" class="text-decoration-none fw-bold d-inline-block "
+                    target="_blank">Asmaa Abdo </a> @2025
+            </p>
+        </div>
+    </footer>
+    <!--& SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--& AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: false,
+                mirror: false,
+                offset: 100
+            });
+        });
+    </script>
+    <!-- &----Bootstrap Js ---- -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

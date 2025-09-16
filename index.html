@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameHaven</title>
+
+    <!-- &-----Fav Icon ---- -->
+    <link rel="shortcut icon" href="./images/5930147.png" type="image/x-icon">
+    <!--& SweetAlert2 CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- & AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <!-- &-----Font Awesome css---- -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <!-- &----Bootstrap css ---- -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <!-- &-----Main css ---- -->
+    <link rel="stylesheet" href="./css/stylee.css">
+</head>
+
+<body>
+    <main>
+        <nav class="navbar navbar-expand-lg fixed-top" data-aos="fade-down" data-aos-duration="800">
+            <div class="container-fluid ">
+                <h1 class="navbar-brand d-flex align-items-center gap-1" data-aos="fade-right" data-aos-delay="100">
+                    <img src="./images/logo-sm.png" alt="game">
+                    <span> Game Haven</span>
+                </h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="100">
+                            <a class="nav-link active " aria-current="page">mmorpg</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="150">
+                            <a class="nav-link">shooter</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="200">
+                            <a class="nav-link">sailing</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="250">
+                            <a class="nav-link">permadeath</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="300">
+                            <a class="nav-link">superhero</a>
+                        </li>
+                        <li class="nav-item" data-aos="fade-down" data-aos-delay="350">
+                            <a class="nav-link">pixel</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="container home p-5 my-5">
+            <div class="row mt-2 row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-2 text-white" id="gameData">
+                <!-- Game cards will be populated here -->
+            </div>
+        </section>
+       
+        <div class="loading d-none">
+            <span class="loader"></span>
+        </div>
+    </main>
+
+    <footer class="fixed-bottom" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+        <div class="container py-3 text-center">
+            <p class=" m-0 fs-6 ">
+                Made with <i class="fa-solid fa-heart fa-beat mx-1 text-danger"></i> by
+                <a href="https://www.linkedin.com/in/asmaa-abdo" class="text-decoration-none fw-bold d-inline-block "
+                    target="_blank">Asmaa Abdo </a> @2025
+            </p>
+        </div>
+    </footer>
+    <!--& SweetAlert2 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!--& AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        // Initialize AOS
+        document.addEventListener('DOMContentLoaded', function () {
+            AOS.init({
+                duration: 800,
+                easing: 'ease-in-out',
+                once: false,
+                mirror: false,
+                offset: 100
+            });
+        });
+    </script>
+    <!-- &----Bootstrap Js ---- -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!-- &----Main Js  ---- -->
+    <script src="./js/index.js" type="module"></script>
+</body>
+
+</html>
