@@ -46,4 +46,4 @@ GameHaven/
 └── README.md
 ```
 
-👩‍💻 Developed by [Asmaa Abdo](https://github.com/asmaa-abdo22) 
+👩‍💻 Developed By [Asmaa Abdo](https://github.com/asmaa-abdo22) 
