@@ -14,7 +14,6 @@ export class Details {
       options
     );
     let data= await response.json()
-    console.log("details",data)
     return data
   }
 }

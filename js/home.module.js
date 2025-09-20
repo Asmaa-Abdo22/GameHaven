@@ -16,7 +16,7 @@ export class Home {
         link.classList.add("active");
         this.activeLink.classList.remove("active");
         this.activeLink = link;
-        console.log("Active link is", link.innerHTML);
+        
         this.getGames(link.innerHTML.toLowerCase());
         this.loading.classList.remove("d-none");
         this.allGamesArr = await this.getGames(link.innerHTML.toLowerCase());
@@ -45,7 +45,7 @@ export class Home {
       }
     );
     let data = await response.json();
-    console.log(data);
+   
     return data;
   }
 }
