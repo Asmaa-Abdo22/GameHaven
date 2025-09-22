@@ -29,7 +29,7 @@
             const data = await details.getDetails(gameId);
             ui.displayDetails(data);
             
-            // Refresh AOS after content is loaded to ensure animations work
+            
             setTimeout(() => {
                 AOS.refresh();
             }, 100);
