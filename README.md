@@ -5,7 +5,7 @@ A sleek and responsive **free-to-play game browser app** built with **Object-Ori
 🔗 [Click here to view the demo](https://asmaa-abdo22.github.io/GameHaven/)  
 
 ## 🎯 Project Aim  
-The main goal of this project is **not just writing plain JavaScript code**, but to:  
+The main goal of this project is **not just writing plain JavaScript code**, but also to:  
 - Apply **OOP concepts** like Classes, Objects, and Encapsulation.  
 - Organize the code using **ES6 Modules** (`Home`, `Ui`, `Details`).  
 - Make the app **scalable and maintainable** by separating responsibilities (data fetching vs UI rendering).  
