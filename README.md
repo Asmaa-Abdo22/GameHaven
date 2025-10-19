@@ -2,7 +2,7 @@
 A sleek and responsive **free-to-play game browser app** built with **Object-Oriented Programming (OOP)** principles in JavaScript.  
 
 ## 🚀 Live Demo  
-🔗 [Click here to view the demo](https://asmaa-abdo22.github.io/GameHaven/)  
+🔗 [Click here to view the demo](https://game-haven-sandy.vercel.app/)  
 
 ## 🎯 Project Aim  
 The main goal of this project is **not just writing plain JavaScript code**, but also to:  
